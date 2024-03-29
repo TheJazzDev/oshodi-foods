@@ -36,7 +36,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <nav className="flex relative sm:hidden px-10 pt-4 font-semibold">
+    <nav className="flex relative sm:hidden px-4 pt-4 font-semibold">
       {isOpen ? (
         <Button onClickHandler={toggleSidebar} className="z-10 absolute mt-2">
           <Menu color="black" />
