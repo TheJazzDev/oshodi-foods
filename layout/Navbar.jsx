@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between px-20 font-semibold">
+    <nav className="hidden sm:flex items-center justify-between px-20 font-semibold">
       <div>
         <Image src="/logo.svg" width={140} height={60} alt="Oshodi Foods" />
       </div>
