@@ -1,10 +1,13 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/shared";
 import { ReactTyped } from "react-typed";
 import Services from "./services/page";
+import Contact from "./contact/page";
 
 const Home = () => {
+  const router = useRouter()
   return (
     <>
       <header className="flex flex-col sm:flex-row gap-6 sm:gap-0 justify-between px-4 sm:px-20 ">
@@ -34,6 +37,7 @@ const Home = () => {
           <Button
             variant="primary"
             className="w-fit px-16 py-3 font-semibold hidden sm:block"
+            onClickHandler={() => router.push("/services")}
           >
             Explore our Services
           </Button>
@@ -50,6 +54,7 @@ const Home = () => {
         <Button
           variant="primary"
           className="w-fit px-16 py-3 self-center font-semibold sm:hidden"
+          onClickHandler={() => router.push("/services")}
         >
           Explore our Services
         </Button>
@@ -84,6 +89,10 @@ const Home = () => {
 
       <section className="mt-16 sm:mt-28">
         <Services />{" "}
+      </section>
+
+      <section className="mt-12 sm:mt-14">
+        <Contact />
       </section>
     </>
   );

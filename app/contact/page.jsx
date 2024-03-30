@@ -1,10 +1,13 @@
 "use client";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Button, Input, TextArea } from "@/components/shared";
+import { Phone, Mail, MessageCircleMore } from "lucide-react";
 // import { PhoneInput } from "react-international-phone";
 // import "react-international-phone/style.css";
 
 const Contact = () => {
+  const pathname = usePathname();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -21,12 +24,12 @@ const Contact = () => {
     }));
   };
 
-//   const handlePhoneInputChange = (value) => {
-//     setFormData((prev) => ({
-//       ...prev,
-//       number: value,
-//     }));
-//   };
+  //   const handlePhoneInputChange = (value) => {
+  //     setFormData((prev) => ({
+  //       ...prev,
+  //       number: value,
+  //     }));
+  //   };
 
   return (
     <div className="px-4 sm:px-0 relative">
@@ -64,7 +67,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="sm:flex justify-between">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-0 justify-between mb-3">
           <Input
             type="tel"
             value={formData.number}
@@ -105,7 +108,27 @@ const Contact = () => {
           onChange={handlePhoneInputChange}
           className=""
         /> */}
+
+        <Button variant="secondary" className="mt-3 font-semibold">
+          Send
+        </Button>
       </form>
+
+      <section
+        className={`${
+          pathname === "/contact" ? "flex" : "hidden"
+        } justify-center gap-7 sm:gap-10 mt-6 sm:mt-14`}
+      >
+        <div className="w-12 h-12 bg-[#D4D6F8] rounded-full flex items-center justify-center">
+          <Phone color="#30348D" />
+        </div>
+        <div className="w-12 h-12 bg-[#D4D6F8] rounded-full flex items-center justify-center">
+          <MessageCircleMore color="#30348D" />
+        </div>
+        <div className="w-12 h-12 bg-[#D4D6F8] rounded-full flex items-center justify-center">
+          <Mail color="#30348D" />
+        </div>
+      </section>
     </div>
   );
 };
