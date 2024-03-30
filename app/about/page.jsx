@@ -56,7 +56,7 @@ const About = () => {
             <p className="mb-6">
               When you choose Oshodi Group, you can expect:
             </p>
-            <ul className="flex flex-col gap-4 list-disc ml-4 sm:ml-8">
+            <ul className="flex flex-col gap-4 marker:text-primary-blue list-disc ml-4 sm:ml-8">
               <li>
                 <span className="text-primary-blue font-semibold">
                   Reliability:
