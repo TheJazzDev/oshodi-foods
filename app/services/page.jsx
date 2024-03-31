@@ -46,7 +46,7 @@ const Services = () => {
         Experience Tailored Excellence: Discover Our Range of Services
       </p>
 
-      <section className="flex gap-4 mx-4 sm:mx-10 sm:gap-6 sm:justify-center mt-10 sm:mt-20 scroll-smooth scroll-ml-4 overflow-auto">
+      <section className="flex gap-4 mx-4 sm:mx-10 sm:gap-6 sm:justify-center mt-10 sm:mt-20 no-scrollbar scroll-smooth scroll-ml-4 overflow-auto">
         {tabs.map((tab) => {
           const { url, title, href } = tab;
 
