@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { Card } from "@/components/shared";
 import { Button } from "@/components/shared";
@@ -6,28 +7,33 @@ import { MoveRight } from "lucide-react";
 
 const Services = () => {
   const router = useRouter();
-const pathname = usePathname()
+  const pathname = usePathname();
 
   const tabs = [
     {
       title: "Commodity Procurement",
       url: "/images/commodity.png",
+      href: "/services/commodity",
     },
     {
       title: "Global Exportation",
       url: "/images/cargo.png",
+      href: "/services/exportation",
     },
     {
       title: "Warehousing and Logistics",
       url: "/images/warehouse.png",
+      href: "/services/warehouse-logistics",
     },
     {
       title: "Local Distribution",
       url: "/images/distribution.png",
+      href: "/services/distribution",
     },
     {
       title: "Market Consulting",
       url: "/images/consult.png",
+      href: "/services/market-consulting",
     },
   ];
 
@@ -42,12 +48,12 @@ const pathname = usePathname()
 
       <section className="flex gap-4 mx-4 sm:mx-10 sm:gap-6 sm:justify-center mt-10 sm:mt-20 scroll-smooth scroll-ml-4 overflow-auto">
         {tabs.map((tab) => {
-          const { url, title } = tab;
+          const { url, title, href } = tab;
 
           return (
-            <Card url={url} key={title}>
-              {title}
-            </Card>
+            <Link href={href} key={title} scroll={false}>
+              <Card url={url}>{title}</Card>
+            </Link>
           );
         })}
       </section>

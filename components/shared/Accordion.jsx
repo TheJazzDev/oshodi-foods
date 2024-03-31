@@ -5,7 +5,7 @@ const Accordion = ({ title, children, isOpen, onClickHandler }) => {
     <div>
       <div
         onClick={onClickHandler}
-        className={`flex w-full p-6 border-b-2 border-b-primary-gray/25 hover:cursor-pointer `}
+        className={`flex w-full p-6 pl-4 border-b-2 border-b-primary-gray/25 hover:cursor-pointer `}
       >
         <p className="text-primary-blue font-semibold">{title}</p>
         <span
@@ -13,11 +13,11 @@ const Accordion = ({ title, children, isOpen, onClickHandler }) => {
             isOpen && "rotate-90"
           }`}
         >
-          <ChevronRight strokeWidth={1.5}/>
+          <ChevronRight strokeWidth={1.5} />
         </span>
       </div>
       {isOpen && (
-        <div className="pt-10 duration-500 ease-out text-justify break-normal leading-[30px]">
+        <div className="pt-10 pl-4 duration-500 ease-out text-justify break-normal leading-[30px]">
           {children}
         </div>
       )}
