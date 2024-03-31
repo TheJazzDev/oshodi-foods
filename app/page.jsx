@@ -7,12 +7,12 @@ import Services from "./services/page";
 import Contact from "./contact/page";
 
 const Home = () => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <>
       <header className="flex flex-col sm:flex-row gap-6 sm:gap-0 justify-between px-4 sm:px-20 ">
         <div className="w-[22rem] sm:w-[39rem] flex flex-col gap-6 sm:gap-8">
-          <h1 className="text-2xl sm:text-6xl text-primary-blue font-semibold text-balance tracking-wide leading-8 sm:leading-[80px]">
+          <h1 className="text-2xl sm:text-6xl sm:w-[42rem] text-primary-blue font-semibold text-balance tracking-wide leading-8 sm:leading-[80px]">
             Discover the <br />
             Best{" "}
             <span className="text-primary-red">
