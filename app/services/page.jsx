@@ -42,7 +42,7 @@ const Services = () => {
       <h1 className="text-primary-blue font-medium text-center text-lg sm:text-[2.5rem]">
         Our Services
       </h1>
-      <p className="text-primary-gray/80 text-sm sm:text-base text-center mt-4">
+      <p className="text-primary-gray/80 text-sm sm:text-base text-center w-[286px] sm:w-full mx-auto mt-4 sm:mt-6">
         Experience Tailored Excellence: Discover Our Range of Services
       </p>
 
@@ -51,7 +51,7 @@ const Services = () => {
           const { url, title, href } = tab;
 
           return (
-            <Link href={href} key={title} scroll={false}>
+            <Link href={href} key={title}>
               <Card url={url}>{title}</Card>
             </Link>
           );

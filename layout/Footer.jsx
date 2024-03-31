@@ -75,7 +75,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="hidden sm:flex justify-between mt-16 pb-16 px-[113px] text-[#060A32] text-sm">
+    <footer className="hidden sm:flex justify-between border-t-2 border-t-primary-gray/25 mt-28 pt-16 pb-16 px-[113px] text-[#060A32] text-sm">
       <section className="flex flex-col">
         <div className="flex items-center gap-[127px]">
           <div className="flex flex-col">

@@ -39,22 +39,24 @@ const Sidebar = () => {
     <nav className="flex relative sm:hidden px-4 pt-4 font-semibold">
       {isOpen ? (
         <Button onClickHandler={toggleSidebar} className="z-10 absolute mt-2">
-          <Menu color="black" />
+          <Menu color="#30348D" />
         </Button>
       ) : (
         <div className="flex flex-col gap-6 z-10 absolute bg-white w-[211px] pt-2 h-screen">
           <Button onClickHandler={toggleSidebar}>
-            <X color="black" />{" "}
+            <X color="#30348D" />{" "}
           </Button>
           {tabs.map((tab) => {
             const { title, href } = tab;
+            const isActive =
+              pathname === href || pathname.startsWith(`${href}/`);
 
             return (
               <Link
                 href={href}
                 key={title}
                 className={`${
-                  pathname === href ? "text-primary-blue " : "text-primary-gray"
+                  isActive ? "text-primary-blue" : "text-primary-gray"
                 }`}
               >
                 <p>{title}</p>
@@ -63,11 +65,13 @@ const Sidebar = () => {
           })}
         </div>
       )}
-      <div className="flex items-center gap-28 ml-6">
+      <div className="flex items-center gap-28 ml-10">
         <div>
           <Image src="/logo.svg" width={82} height={23} alt="Oshodi Foods" />
         </div>
-        <Button variant="primary">Shop Now</Button>
+        <Button variant="primary" className="px-6 py-[6px]">
+          Shop Now
+        </Button>
       </div>
     </nav>
   );

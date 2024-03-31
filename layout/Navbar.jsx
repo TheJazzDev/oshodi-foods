@@ -35,13 +35,14 @@ const Navbar = () => {
       <div className="flex gap-16">
         {tabs.map((tab) => {
           const { title, href } = tab;
+          const isActive = pathname === href || pathname.startsWith(`${href}/`);
 
           return (
             <Link
               href={href}
               key={title}
               className={`${
-                pathname === href ? "text-primary-blue " : "text-primary-gray"
+                isActive ? "text-primary-blue" : "text-primary-gray"
               }`}
             >
               <p>{title}</p>
