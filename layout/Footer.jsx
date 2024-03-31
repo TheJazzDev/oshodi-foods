@@ -58,7 +58,7 @@ const Footer = () => {
   const contacts = [
     {
       icon: <Mail size={20} strokeWidth={1.5} color="#30348D" />,
-      title: "oshodifoods@gmail.com",
+      title: "info@oshodifood.com",
     },
     {
       icon: <Phone size={20} strokeWidth={1.5} color="#30348D" />,
@@ -145,12 +145,30 @@ const Footer = () => {
             <p className="font-medium text-lg">Contact Us</p>
 
             {contacts.map((contact) => {
+              let href = "";
+              if (contact.title.startsWith("+")) {
+                href = `tel:${contact.title}`;
+              } else if (contact.title.includes("@")) {
+                href = `mailto:${contact.title}`;
+              }
+
               return (
-                <li className="flex gap-1 items-center" key={contact.title}>
-                  {contact.icon}{" "}
-                  <span className="text-primary-blue font-medium hover:text-primary-gray">
-                    {contact.title}
-                  </span>
+                <li key={contact.title}>
+                  {href ? (
+                    <a href={href} className="flex gap-1 items-center">
+                      {contact.icon}{" "}
+                      <span className="text-primary-blue font-medium hover:text-primary-gray">
+                        {contact.title}
+                      </span>
+                    </a>
+                  ) : (
+                    <div className="flex gap-1 items-center">
+                      {contact.icon}{" "}
+                      <span className="text-primary-blue font-medium hover:text-primary-gray">
+                        {contact.title}
+                      </span>
+                    </div>
+                  )}
                 </li>
               );
             })}

@@ -9,7 +9,7 @@ const ImageGrid = ({ img1, alt1, img2, alt2, img3, alt3 }) => {
             src={img1}
             width={408}
             height={408}
-            className="h-[14.9rem] sm:h-[25.5rem]"
+            className="h-[14.9rem] sm:h-[25.5rem] w-auto"
             alt={alt1}
           />
         </div>
@@ -21,7 +21,7 @@ const ImageGrid = ({ img1, alt1, img2, alt2, img3, alt3 }) => {
             src={img2}
             width={192}
             height={220}
-            className="h-[7.1rem] sm:h-[13.75rem]"
+            className="h-[7.1rem] sm:h-[13.75rem] w-auto"
             alt={alt2}
           />
         </div>
@@ -30,7 +30,7 @@ const ImageGrid = ({ img1, alt1, img2, alt2, img3, alt3 }) => {
             src={img3}
             width={192}
             height={220}
-            className="h-[7.1rem] sm:h-[13.75rem]"
+            className="h-[7.1rem] sm:h-[13.75rem] w-auto"
             alt={alt3}
           />
         </div>

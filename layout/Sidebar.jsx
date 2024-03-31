@@ -69,7 +69,7 @@ const Sidebar = () => {
         <div>
           <Image src="/logo.svg" width={82} height={23} alt="Oshodi Foods" />
         </div>
-        <Button variant="primary" className="px-6 py-[6px]">
+        <Button variant="primary" className="pl-6 pr-4 py-[6px]">
           Shop Now
         </Button>
       </div>
