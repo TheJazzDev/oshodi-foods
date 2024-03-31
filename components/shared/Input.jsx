@@ -6,6 +6,8 @@ const Input = ({
   label,
   placeholder,
   onChangeHandler,
+  pattern,
+  max,
 }) => {
   return (
     <div className="flex flex-col ">
@@ -22,9 +24,11 @@ const Input = ({
         name={name}
         placeholder={placeholder}
         onChange={onChangeHandler}
-        className=" bg-[#F6F7FF] rounded-lg sm:w-[480px] py-2 sm:py-[14px] px-3 sm:px-5 placeholder:text-primary-gray/50 placeholder:font-medium focus:border focus:outline-none focus:ring-1 focus:border-primary-gray focus:ring-primary-gray invalid:text-primary-red focus:invalid:border-primary-red focus:invalid:ring-primary-red  "
+        className=" bg-[#F6F7FF] rounded-lg w-full py-2 sm:py-[14px] px-3 sm:px-5 placeholder:text-primary-gray/50 placeholder:font-medium focus:border focus:outline-none focus:ring-1 focus:border-primary-gray focus:ring-primary-gray invalid:text-primary-red focus:invalid:border-primary-red focus:invalid:ring-primary-red  "
         autoComplete="on"
         required
+        pattern={pattern}
+        maxLength={max}
       />
     </div>
   );

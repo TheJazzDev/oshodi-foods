@@ -1,10 +1,8 @@
 "use client";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { Button, Input, TextArea } from "@/components/shared";
+import { Button, Input, TextArea, PhoneInput } from "@/components/shared";
 import { Phone, Mail, MessageCircleMore } from "lucide-react";
-// import { PhoneInput } from "react-international-phone";
-// import "react-international-phone/style.css";
 
 const Contact = () => {
   const pathname = usePathname();
@@ -24,12 +22,12 @@ const Contact = () => {
     }));
   };
 
-  //   const handlePhoneInputChange = (value) => {
-  //     setFormData((prev) => ({
-  //       ...prev,
-  //       number: value,
-  //     }));
-  //   };
+  const handlePhoneInputChange = (value) => {
+    setFormData((prev) => ({
+      ...prev,
+      number: value,
+    }));
+  };
 
   return (
     <div className="px-4 sm:px-0 relative">
@@ -46,46 +44,52 @@ const Contact = () => {
         action=""
         className="flex flex-col gap-3 sm:gap-10 bg-white px-6 sm:px-8 py-3 sm:py-10 mx-[18px] sm:mx-[188px] rounded-md shadow-lg z-50 mt-[-20px] sm:mt-[-250px]"
       >
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-0 justify-between">
-          <Input
-            type="text"
-            value={formData.fullName}
-            name="fullName"
-            id="fullName"
-            label="Name"
-            placeholder="Your full name"
-            onChangeHandler={handleInputChange}
-          />
-          <Input
-            type="email"
-            value={formData.email}
-            name="email"
-            id="email"
-            label="Email"
-            placeholder="Your email"
-            onChangeHandler={handleInputChange}
-          />
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-10">
+          <div className="w-full">
+            <Input
+              type="text"
+              value={formData.fullName}
+              name="fullName"
+              id="fullName"
+              label="Name"
+              placeholder="Your full name"
+              onChangeHandler={handleInputChange}
+            />
+          </div>
+          <div className="w-full">
+            <Input
+              type="email"
+              value={formData.email}
+              name="email"
+              id="email"
+              label="Email"
+              placeholder="Your email"
+              onChangeHandler={handleInputChange}
+            />
+          </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-0 justify-between mb-3">
-          <Input
-            type="tel"
-            value={formData.number}
-            name="number"
-            id="number"
-            label="Phone"
-            placeholder="Your phone number"
-            onChangeHandler={handleInputChange}
-          />
-          <Input
-            type="text"
-            value={formData.subject}
-            name="subject"
-            id="subject"
-            label="Subject"
-            placeholder="Subject"
-            onChangeHandler={handleInputChange}
-          />
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-10  mb-3">
+          <div className="w-full">
+            <PhoneInput
+              value={formData.number}
+              onChangeHandler={handlePhoneInputChange}
+              name="number"
+              id="number"
+            />
+          </div>
+
+          <div className="w-full">
+            <Input
+              type="text"
+              value={formData.subject}
+              name="subject"
+              id="subject"
+              label="Subject"
+              placeholder="Subject"
+              onChangeHandler={handleInputChange}
+            />
+          </div>
         </div>
 
         <TextArea
@@ -99,15 +103,6 @@ const Contact = () => {
           autoComplete="on"
           required
         />
-
-        {/* <PhoneInput
-          defaultCountry="us"
-          value={formData.number}
-          name="number"
-          id="number"
-          onChange={handlePhoneInputChange}
-          className=""
-        /> */}
 
         <Button variant="secondary" className="mt-3 font-semibold">
           Send
