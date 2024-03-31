@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
 
-const Accordion = ({ title, info, isOpen, onClickHandler }) => {
+const Accordion = ({ title, children, isOpen, onClickHandler }) => {
   return (
     <div>
       <div
@@ -13,10 +13,14 @@ const Accordion = ({ title, info, isOpen, onClickHandler }) => {
             isOpen && "rotate-90"
           }`}
         >
-          <ChevronRight />
+          <ChevronRight strokeWidth={1.5}/>
         </span>
       </div>
-      {isOpen && <div className="p-4 pt-10 duration-500 ease-out">{info}</div>}
+      {isOpen && (
+        <div className="pt-10 duration-500 ease-out text-justify break-normal leading-[30px]">
+          {children}
+        </div>
+      )}
     </div>
   );
 };
