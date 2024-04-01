@@ -1,3 +1,4 @@
+"use client"
 import { ImageGrid } from "@/components/shared";
 import DeskBody from "./deskBody";
 import MobileBody from "./mobileBody";
