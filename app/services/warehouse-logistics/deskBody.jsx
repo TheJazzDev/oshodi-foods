@@ -6,11 +6,11 @@ import { warehouseLogisticsData } from "@/lib/constants";
 
 const DeskBody = () => {
   const router = useRouter();
-   const [openAccordionIndex, setOpenAccordionIndex] = useState(null);
+  const [openAccordionIndex, setOpenAccordionIndex] = useState(null);
 
-   const toggleAccordion = (index) => {
-     setOpenAccordionIndex((prevIndex) => (prevIndex === index ? null : index));
-   };
+  const toggleAccordion = (index) => {
+    setOpenAccordionIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
 
   return (
     <div className="hidden sm:block w-[758px] mt-16">
@@ -30,21 +30,37 @@ const DeskBody = () => {
       })}
 
       <div className="mt-10 text-justify break-normal leading-[30px]">
-        <p className="mb-8">
-          As your trusted partner in warehousing and logistics, we understand
-          the significance of collaboration and transparency in fostering
-          long-term success. Our team of industry experts works tirelessly to
-          understand your unique requirements, tailor solutions to meet your
-          specific needs, and provide proactive support every step of the way.
-          With Oshodi Group by your side, you can trust that your commodities
-          are in capable hands, allowing you to focus on what matters most.
-        </p>
-        <p>
-          Discover how our world-class warehousing and logistics solutions can
-          elevate the standard for your business. Contact us today to learn more
-          about our comprehensive suite of services and embark on a journey
-          towards unparalleled excellence in warehousing and logistics.
-        </p>
+        <section className="mb-8">
+          <h4 className="font-medium mb-3 text-primary-blue">
+            Partnership and Transparency
+          </h4>
+          <p className="mb-4">
+            At Oshodi Group, we believe in the power of partnership and the
+            value of transparency. We work closely with our clients to
+            understand their warehousing and logistics needs, offering tailored
+            solutions that best meet those requirements. Our team is dedicated
+            to providing clear communication and support throughout the process,
+            ensuring a successful partnership.
+          </p>
+          <p>
+            With Oshodi Group, you can trust that your commodities are in good
+            hands. Our straightforward approach to warehousing and logistics
+            allows you to focus on the core aspects of your business, knowing
+            that the storage and transportation of your goods are being managed
+            effectively.
+          </p>
+        </section>
+        <section>
+          <h4 className="mb-3 font-medium text-primary-blue">
+            Discover Our Warehousing Solutions
+          </h4>
+          <p>
+            Learn more about how our warehousing and logistics services can
+            support your business. Contact us today to discuss your needs and
+            how we can help you achieve your operational goals with our
+            practical and reliable warehousing solutions at Oshodi Group.
+          </p>
+        </section>
       </div>
 
       <div className="flex justify-center mt-10">

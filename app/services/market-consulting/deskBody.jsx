@@ -16,15 +16,15 @@ const DeskBody = () => {
     <div className="hidden sm:block w-[758px] mt-16">
       <div className="mb-6 text-justify break-normal leading-[30px]">
         <p>
-          Oshodi Foods offers comprehensive market consulting services tailored
-          to guide you through the intricate process of exporting goods to the
-          UK and Europe. Our step-by-step approach ensures a seamless and
-          successful export journey. Here’s how we support you at every stage:
+          Oshodi Foods provides bespoke market consulting services designed to
+          navigate you through the complex process of exporting goods worldwide.
+          Our systematic approach ensures a smooth and successful export
+          journey. Here's how we support you at every phase:
         </p>
       </div>
 
       {consultingData.map((data) => {
-        const { title, listItem1, listItem2, key } = data;
+        const { title, subTitle1, listItem1, subTitle2, listItem2, key } = data;
 
         return (
           <div key={key} className="mt-4">
@@ -33,20 +33,42 @@ const DeskBody = () => {
               isOpen={key === openAccordionKey}
               onClickHandler={() => toggleAccordion(key)}
             >
-              <ul className="list-disc">
+              <ul className="list-disc marker:text-primary-blue">
                 {listItem2 ? (
                   <>
-                    <li className="mb-4">{listItem1}</li>
-                    <li>{listItem2}</li>
+                    <li className="mb-4">
+                      <span className="font-medium text-primary-blue">
+                        {subTitle1}
+                      </span>{" "}
+                      {listItem1}
+                    </li>
+                    <li>
+                      <span className="font-medium text-primary-blue">
+                        {subTitle2}
+                      </span>{" "}
+                      {listItem2}
+                    </li>
                   </>
                 ) : (
-                  <li>{listItem1}</li>
+                  <li>
+                    <span className="font-medium text-primary-blue">
+                      {subTitle1}
+                    </span>{" "}
+                    {listItem1}
+                  </li>
                 )}
               </ul>
             </Accordion>
           </div>
         );
       })}
+
+      <div className="mt-10 text-justify break-normal leading-[30px]">
+        <p>
+          Embark on your export journey with Oshodi Foods and unlock the
+          potential of the markets for your products.
+        </p>
+      </div>
 
       <div className="flex justify-center mt-10">
         <Button

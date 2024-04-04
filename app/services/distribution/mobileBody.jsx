@@ -7,28 +7,41 @@ const MobileBody = () => {
 
   return (
     <div className="sm:hidden mt-12">
-      <article className="flex flex-col gap-8 text-justify break-normal leading-[30px]">
+      <article className="flex flex-col gap-6 text-justify break-normal leading-[30px]">
         <section>
-          At Oshodi Group, we have cultivated a vast network of local
-          distribution channels, whether nestled in bustling urban centers or
-          remote rural communities, our distribution network ensures that our
-          clients and customers have access to the finest commodities available
-          in the market. From small retail outlets to large-scale industries,
-          our distribution services are designed to accommodate varying demands
-          and facilitate seamless access to quality commodities.
+          At the heart of global commerce, our export services bridge borders,
+          elevating Nigerian commodities to a significant international status
+          as essential staples in global markets. We facilitate a seamless
+          export process, carefully designed to navigate the complexities of
+          international trade effortlessly. From the initial consultation to the
+          final delivery, our extensive range of export services guarantees a
+          smooth and efficient passage for your commodities to their worldwide
+          destinations.
+        </section>
+        <section>
+          The maze of international customs regulations can be overwhelming, but
+          with our specialised customs clearance support, you can be confident
+          that your commodities will pass through customs smoothly. Our team of
+          experts diligently oversees all customs documentation and procedures,
+          ensuring adherence to regulatory requirements and speeding up the
+          clearance process. Whether by air, sea, or land, we collaborate with
+          reputable shipping carriers known for their dependability and
+          efficiency, ensuring timely delivery and peace of mind for our
+          clients.
         </section>
 
         <section>
-          Efficiency is the hallmark of our distribution services. We understand
-          the importance of timely delivery in meeting the demands of a dynamic
-          market. Leveraging our expertise and resources, we ensure that
-          commodities are dispatched promptly and reach their destinations
-          efficiently, minimizing downtime and maximizing productivity for our
-          clients.
+          Our export strategies are driven by detailed market insights carefully
+          gathered to identify and leverage opportunities in regions worldwide
+          with high demand. By examining market trends, consumer preferences,
+          and economic indicators, we customise our export initiatives to target
+          areas with the most significant potential for success. This approach
+          ensures optimal market penetration and profitability for your
+          commodities.
         </section>
         <section>
-          Contact us today to explore our comprehensive suite of distribution
-          services and embark on a satisfactory journey of sourcing for premium
+          Contact us today to discover our comprehensive suite of distribution
+          services and begin a fulfilling journey of sourcing premium
           commodities with Oshodi Group.
         </section>
       </article>

@@ -7,48 +7,41 @@ const MobileBody = () => {
 
   return (
     <div className="sm:hidden mt-12">
-      <article className="flex flex-col gap-8 text-justify break-normal leading-[30px]">
+      <article className="flex flex-col gap-6 text-justify break-normal leading-[30px]">
         <section>
-          In the intricate world of commodities, maintaining both value and
-          quality hinges upon the utilization of state-of-the-art storage
-          facilities and the implementation of efficient logistics solutions. At
-          Oshodi Group, we deeply understand this pivotal necessity and take
-          immense pride in delivering world-class solutions that transcend
-          industry standards.
+          Our warehousing facility is at the heart of our service offering,
+          designed to cater to a wide range of storage needs. Our focus is on
+          practicality, security, and efficiency. Our warehouse is equipped to
+          handle various commodities, from non-perishable goods to bulk items,
+          ensuring they are stored under suitable conditions. Security protocols
+          are in place to safeguard your commodities, and our inventory
+          management system is designed to keep track of your goods efficiently.
         </section>
         <section>
-          Central to our commitment is our avant-garde warehousing facility,
-          meticulously equipped with the latest technological advancements to
-          facilitate optimal inventory management, climate control, and security
-          protocols. From temperature-sensitive goods to high-value merchandise,
-          our warehousing infrastructure ensures that your commodities are
-          safeguarded and preserved at their peak condition throughout their
-          stay with us.
+          Complementing our warehousing services, our logistics operations are
+          tailored to ensure the smooth movement of goods. We utilise a network
+          of reliable transportation partners to facilitate timely deliveries.
+          We aim to reduce lead times and make the delivery process seamless,
+          ensuring your commodities reach their intended destinations promptly.
         </section>
 
         <section>
-          Complementing our exceptional warehousing capabilities is our finely
-          tuned logistics chain, engineered to expedite the movement of goods
-          with unparalleled efficiency. By leveraging advanced routing
-          algorithms and strategic partnerships with leading transportation
-          providers, we substantially reduce lead times and streamline the
-          delivery process, guaranteeing that your commodities reach their
-          designated destinations swiftly and seamlessly.
+          At Oshodi Group, we believe in the power of partnership and the value
+          of transparency. We work closely with our clients to understand their
+          warehousing and logistics needs, offering tailored solutions that best
+          meet those requirements. Our team is dedicated to providing clear
+          communication and support throughout the process, ensuring a
+          successful partnership. With Oshodi Group, you can trust that your
+          commodities are in good hands. Our straightforward approach to
+          warehousing and logistics allows you to focus on the core aspects of
+          your business, knowing that the storage and transportation of your
+          goods are being managed effectively.
         </section>
         <section>
-          As your trusted partner in warehousing and logistics, we understand
-          the significance of collaboration and transparency in fostering
-          long-term success. Our team of industry experts works tirelessly to
-          understand your unique requirements, tailor solutions to meet your
-          specific needs, and provide proactive support every step of the way.
-          With Oshodi Group by your side, you can trust that your commodities
-          are in capable hands, allowing you to focus on what matters most.
-        </section>
-        <section>
-          Discover how our world-class warehousing and logistics solutions can
-          elevate the standard for your business. Contact us today to learn more
-          about our comprehensive suite of services and embark on a journey
-          towards unparalleled excellence in warehousing and logistics.
+          Learn more about how our warehousing and logistics services can
+          support your business. Contact us today to discuss your needs and how
+          we can help you achieve your operational goals with our practical and
+          reliable warehousing solutions at Oshodi Group.
         </section>
       </article>
 

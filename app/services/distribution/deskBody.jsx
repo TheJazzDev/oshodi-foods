@@ -18,35 +18,43 @@ const DeskBody = () => {
         isOpen={isOpen}
         onClickHandler={toggleAccordion}
       >
-        At the nexus of global trade, our export services transcend borders,
-        propelling Nigerian commodities onto the international stage, where they
-        assert their prominence as indispensable staples in global markets. We
-        orchestrate a seamless export process, meticulously crafted to navigate
-        the complexities of international trade with ease. From initial
-        consultations to final delivery, our comprehensive suite of export
-        services ensures a smooth and efficient journey for your commodities to
-        reach their global destinations. Navigating the intricate web of
-        international customs regulations can be daunting, but with our
-        dedicated customs clearance assistance, you can rest assured that your
-        commodities will sail through customs seamlessly. Our team of experts
-        meticulously manages all customs documentation and procedures, ensuring
-        compliance with regulatory requirements and expediting the clearance
-        process. Whether by air, sea, or land, we partner with trusted shipping
-        carriers renowned for their reliability and efficiency, guaranteeing
-        timely delivery and peace of mind for our clients. Our export strategies
-        are informed by comprehensive market insights, meticulously curated to
-        identify and capitalize on opportunities in high-demand regions
-        worldwide. By analyzing market trends, consumer preferences, and
-        economic indicators, we tailor our export efforts to target regions with
-        the greatest potential for success, ensuring maximum market penetration
-        and profitability for your commodities.
+        <section className="mb-4">
+          At the heart of global commerce, our export services bridge borders,
+          elevating Nigerian commodities to a significant international status
+          as essential staples in global markets. We facilitate a seamless
+          export process, carefully designed to navigate the complexities of
+          international trade effortlessly. From the initial consultation to the
+          final delivery, our extensive range of export services guarantees a
+          smooth and efficient passage for your commodities to their worldwide
+          destinations.
+        </section>
+        <section className="mb-4">
+          The maze of international customs regulations can be overwhelming, but
+          with our specialised customs clearance support, you can be confident
+          that your commodities will pass through customs smoothly. Our team of
+          experts diligently oversees all customs documentation and procedures,
+          ensuring adherence to regulatory requirements and speeding up the
+          clearance process. Whether by air, sea, or land, we collaborate with
+          reputable shipping carriers known for their dependability and
+          efficiency, ensuring timely delivery and peace of mind for our
+          clients.
+        </section>
+        <section>
+          Our export strategies are driven by detailed market insights carefully
+          gathered to identify and leverage opportunities in regions worldwide
+          with high demand. By examining market trends, consumer preferences,
+          and economic indicators, we customise our export initiatives to target
+          areas with the most significant potential for success. This approach
+          ensures optimal market penetration and profitability for your
+          commodities.
+        </section>
       </Accordion>
 
       <div className="mt-10 text-justify break-normal leading-[30px]">
         <p>
-          Contact us today to explore our comprehensive suite of distribution
-          services and embark on a satisfactory journey of sourcing for premium
-          commodities with Oshodi Group.
+          Contact us today to discover our comprehensive suite of distribution
+          services and begin a fulfilling journey of sourcing premium
+          commodities with Oshodi Group.up.
         </p>
       </div>
 
