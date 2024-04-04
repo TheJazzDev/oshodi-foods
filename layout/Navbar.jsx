@@ -51,9 +51,7 @@ const Navbar = () => {
         })}
       </div>
 
-      <Button variant="primary" className="px-10">
-        Shop Now
-      </Button>
+      <div> </div>
     </nav>
   );
 };
