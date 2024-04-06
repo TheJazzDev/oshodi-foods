@@ -13,7 +13,7 @@ const DeskBody = () => {
   };
 
   return (
-    <div className="hidden sm:block w-[758px] mt-16">
+    <div className="hidden sm:block max-w-2xl mt-16">
       <div className="mb-6 text-justify break-normal leading-[30px]">
         <p>
           Oshodi Foods provides bespoke market consulting services designed to

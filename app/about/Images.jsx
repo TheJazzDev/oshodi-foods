@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-const RednerImages = ({ src, className, alt }) => {
+const RenderImages = ({ src, className, alt }) => {
   return (
     <Image src={src} width={242} height={294} className={className} alt={alt} />
   );
@@ -8,42 +8,32 @@ const RednerImages = ({ src, className, alt }) => {
 
 const Images = () => {
   return (
-    <div className='flex-1 sm:flex gap-10 justify-center'>
-      <div className='flex lg:flex-col gap-10 mt-[6.25rem]'>
-        <div className='rounded-lg overflow-hidden border-2 border-transparent'>
-          <Image
-            src='/images/distribution.png'
-            width={242}
-            height={294}
-            className='h-[18.5rem]'
-            alt='Delivery of goods'
-          />
-        </div>
-        <div className='rounded-lg overflow-hidden border-2 border-transparent'>
-          <Image
-            src='/images/distribution-3.png'
-            width={242}
-            height={294}
-            className='h-[18.5rem]'
-            alt='Supplies of various goods'
-          />
-        </div>
-      </div>
-
-      <div className='flex flex-col gap-10'>
-        <Image
-          src='/images/distribution-2.png'
-          width={242}
-          height={294}
-          className='h-[294px] w-[242px] rounded-lg'
-          alt='Truck stocked with goods'
+    <div className="flex flex-wrap justify-center gap-6 lg:gap-10">
+      <div className="flex lg:flex-col gap-6 lg:gap-10 lg:mt-[6.25rem]">
+        <RenderImages
+          src="/images/distribution.png"
+          alt="Delivery of goods"
+          className="w-[137px] h-[167px] lg:w-[242px] lg:h-[292px] rounded-lg"
         />
-        <Image
-          src='/images/distribution-4.png'
-          width={242}
-          height={294}
-          className='h-[18.5rem] rounded-lg'
-          alt='Supply pallet'
+
+        <RenderImages
+          src="/images/distribution-3.png"
+          alt="Supplies of various goods"
+          className="w-[137px] h-[167px] lg:w-[242px] lg:h-[292px] rounded-lg"
+        />
+      </div>
+      
+
+      <div className="flex lg:flex-col gap-6 lg:gap-10">
+        <RenderImages
+          src="/images/distribution-2.png"
+          alt="Truck stocked with goods"
+          className="w-[137px] h-[167px] lg:w-[242px] lg:h-[292px] rounded-lg"
+        />
+        <RenderImages
+          src="/images/distribution-4.png"
+          alt="Supply pallet"
+          className="w-[137px] h-[167px] lg:w-[242px] lg:h-[292px] rounded-lg"
         />
       </div>
     </div>

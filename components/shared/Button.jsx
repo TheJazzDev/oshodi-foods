@@ -1,7 +1,8 @@
 import clsx from "clsx";
 
 const Button = ({ children, className, variant, type, onClickHandler }) => {
-  const baseStyle = "border-2 border-transparent text-white py-2 rounded-lg";
+  const baseStyle =
+    "border-2 border-transparent text-white py-2 rounded-lg transition-all delay-75 ease-in duration-300 hover:scale-105";
 
   const variantStyles = {
     primary:
