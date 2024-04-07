@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <div>
       <Navbar />
       <Sidebar />
-      <main className='py-6 sm:py-12'>{children}</main>
+      <main className='py-20 sm:py-32'>{children}</main>
       <Footer />
       <MobileFooter />
     </div>
